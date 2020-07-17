@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email-Form</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
+    <div style="visibility: hidden;" class="con2">
+      <h4 class="admin">Admin</h4>
+    </div>
+    <div class="container">
+      <div class="cont">
+        <h2>ADMIN</h2>
+        <form action="/validate" method="post">
+          <input
+            placeholder="Enter your secret key..."
+            class="em"
+            name="key"
+            type="password"
+          />
+          <div
+            style="
+              color: red;
+              font-size: small;
+              text-align: left;
+              padding-left: 4px;
+            "
+            class="l"
+          >
+            Wrong Key!
+          </div>
+          <div class="but"><button>Validate</button></div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
