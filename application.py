@@ -31,7 +31,7 @@ def validate():
         else:
             return render_template('wrong.html')
 
-app.route('/submit', methods=["GET", "POST"])
+@app.route('/submit', methods=["GET", "POST"])
 def subem():
     if request.method == "POST":
         email = request.form.get("email")
