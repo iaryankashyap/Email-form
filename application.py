@@ -36,10 +36,6 @@ def regemail(email):
     sqcon.commit()
     sqcon.close()
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
 @app.route('/admin')
 def admin():
     return render_template('secret.html')
@@ -60,6 +56,12 @@ def subem():
         email = request.form.get("email")
         regemail(email)
         return render_template('thankyou.html')
+
+#Default
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 
 '''
 if __name__ == "__main__":
