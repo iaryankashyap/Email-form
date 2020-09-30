@@ -61,7 +61,7 @@ def subem():
         regemail(email)
         return render_template('thankyou.html')
 
-'''
+
 if __name__ == "__main__":
     app.run(debug=True)
-    '''
+    
