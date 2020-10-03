@@ -1,7 +1,7 @@
 import mysql.connector as sq
-
-import random
 from flask import Flask, flash, request, redirect, render_template
+import random
+
 
 app = Flask(__name__)
 
@@ -57,7 +57,7 @@ def subem():
         regemail(email)
         return render_template('thankyou.html')
 
-#Default
+#Default Route
 @app.route('/')
 def home():
     return render_template('index.html')
